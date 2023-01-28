@@ -1,0 +1,63 @@
+        
+        .webcamcontainer{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-95%, -50%);
+        z-index: 0;
+
+        }
+        #crosshair{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: auto; 
+        width: auto; 
+        max-width: 100px; 
+        max-height: 100px;
+        z-index: 1;
+        }
+        #footer{
+            color:whitesmoke;
+            font-size: larger;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        bottom: 0;
+        height: auto; 
+        width: auto; 
+        }
+        .status{
+            color:whitesmoke;
+            font-size: xx-large;
+            display: flex;
+            position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 100;
+        height: auto; 
+        width: auto; 
+        white-space: break-spaces;
+
+        }
+        #disabled{
+            color:red;
+            font-weight: bold;
+        }
+        .data{
+            position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(10%, -60%);
+            width: 300px;
+            height:150px;
+            border: 15px solid hsl(0, 0%, 25%);
+            padding: 50px;
+            margin: 20px;
+            color:whitesmoke;
+        }
+        .debug{
+            font-size:x-small;
+            font-weight:lighter;
+        }

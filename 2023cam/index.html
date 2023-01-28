@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Web Cam</title>
-    <style>
-        
-        .webcamcontainer{
-            position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 0;
-        }
-        #crosshair{
-            position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        height: auto; 
-        width: auto; 
-        max-width: 100px; 
-        max-height: 100px;
-            z-index: 1;
-        }
-        
-       
-    </style>
+    <title>DriverView</title>
+    <link rel="icon" type="image/x-icon" href="eyefavicon.ico">
+    <link rel="stylesheet" href="stylesheet.css">
+
 </head>
 <body style="margin: 0px; background: #0e0e0e; height: 100%">
+
+    <div class="status">
+        <div>STATUS: </div>
+        <div id="disabled">DISABLED</div>
+    </div>  
+
+
     <div class="webcamcontainer">
         <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 25%);" src="http://roborio-5459-frc.local:5459/stream.mjpg" width="640" height="480">    
+        <img id="crosshair" src="crosshair.png">
 
     </div>
-    <img id="crosshair" src="crosshair.png">
+
+    <div class="data">
+        <div id="extendPosition">Arm Position: </div>
+        <div id="ledStatus">LED Status:</div>
+<br><br><br>
+        <div class="debug">
+            <div id="deebug">Debug:</div>
+            <div id="encoderLeft">Left Encoder Distance: </div>
+            <div id="encoderRight">Right Encoder Distance: </div>
+            <div id="robotPitch">Robot Pitch: </div>
+            <div id="robotYaw">Robot Yaw: </div>
+        </div>
+        
+
+    </div>
+
+    <footer id="footer">
+        <p>Team 5459 DriverView 2023</p>
+    </footer>
+      
     
     
     
