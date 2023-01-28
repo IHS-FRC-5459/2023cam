@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Cam</title>
+    <style>
+        .webcam{
+            width:100%;
+            height:100%;
+        }
+        .webcamcontainer{
+            position:absolute;
+            display:flex;
+            align-content: center;
+            justify-content: center;
+            width:100%;
+            height:100%;
+            top:0px;
+            left:0px;
+        }
+        .lineVertical{
+            position:absolute;
+            top:0px;
+            left:50%;
+            width:3px;
+            background-color: red;
+            height:100%;
+        }
+        .lineHorizontal{
+            position:absolute;
+            top:50%;
+            left:0px;
+            width:100%px;
+            background-color: red;
+            height:3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="webcamcontainer">
+    <img class="webcam" src="localhost:5459">
+</div>
+    <div class="lineVertical"></div>
+    <div class="lineHorizontal"></div>
+
+</body>
+</html>
